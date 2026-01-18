@@ -1,68 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>my-project</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Projects</title>
 
-  <body class="bg-gray-200">
-    <section
-      class="min-h-screen p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 place-items-center"
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-slate-900 text-white flex justify-center items-center h-screen m-0">
+
+  <div class="text-center p-[30px] bg-white/10 rounded-xl w-[320px]">
+    <h1 class="text-2xl font-bold">My Projects</h1>
+    <p class="mt-2">Select a project:</p>
+
+    <a
+      href="./fitness-resources/"
+      class="block my-3 px-3 py-3 bg-green-500 text-white no-underline rounded-lg font-bold hover:bg-green-600 transition"
     >
-      <div class="w-72 border-4 border-green-300 bg-gray-100 p-4 rounded-lg shadow-lg">
-        <img class="rounded-lg mb-3" src="./images/sifat.jpg" alt="Sifat" />
+      Fitness Resources
+    </a>
 
-        <div>
-          <h2 class="text-3xl text-red-500 font-bold">Sifat</h2>
-          <p class="text-gray-600">Web Developer</p>
+    <a
+      href="./legal-solution-resources/"
+      class="block my-3 px-3 py-3 bg-green-500 text-white no-underline rounded-lg font-bold hover:bg-green-600 transition"
+    >
+      Legal Solution Resources
+    </a>
+  </div>
 
-          <button class="mt-3 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
-            View Profile
-          </button>
-        </div>
-      </div>
-
-      <div class="w-72 border-4 border-green-300 bg-gray-100 p-4 rounded-lg shadow-lg">
-        <img class="rounded-lg mb-3" src="./images/sifat.jpg" alt="Sifat" />
-
-        <div>
-          <h2 class="text-3xl text-red-500 font-bold">Sifat</h2>
-          <p class="text-gray-600">Web Developer</p>
-
-          <button class="mt-3 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
-            View Profile
-          </button>
-        </div>
-      </div>
-
-      <div class="w-72 border-4 border-green-300 bg-gray-100 p-4 rounded-lg shadow-lg">
-        <img class="rounded-lg mb-3" src="./images/sifat.jpg" alt="Sifat" />
-
-        <div>
-          <h2 class="text-3xl text-red-500 font-bold">Sifat</h2>
-          <p class="text-gray-600">Web Developer</p>
-
-          <button class="mt-3 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
-            View Profile
-          </button>
-        </div>
-      </div>
-
-      <div class="w-72 border-4 border-green-300 bg-gray-100 p-4 rounded-lg shadow-lg">
-        <img class="rounded-lg mb-3" src="./images/sifat.jpg" alt="Sifat" />
-
-        <div>
-          <h2 class="text-3xl text-red-500 font-bold">Sifat</h2>
-          <p class="text-gray-600">Web Developer</p>
-
-          <button class="mt-3 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
-            View Profile
-          </button>
-        </div>
-      </div>
-    </section>
-  </body>
+</body>
 </html>
