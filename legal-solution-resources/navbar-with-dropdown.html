@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Lucide -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <title>Navbar with Dropdown</title>
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+
+      <!-- Logo -->
+      <h1 class="text-xl font-bold text-gray-800">MyLogo</h1>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex items-center gap-8 text-gray-500 text-base">
+        <ul class="flex items-center gap-6">
+
+          <li>
+            <a href="#" class="hover:text-gray-800">Home</a>
+          </li>
+
+          <!-- Services Dropdown -->
+          <li class="relative group">
+            <button class="flex items-center gap-2 hover:text-gray-800 cursor-pointer">
+              Services
+              <i data-lucide="chevron-down" class="w-4 h-4"></i>
+            </button>
+
+            <ul class="absolute left-0 top-8 w-44 bg-white shadow-md rounded-md py-2 hidden group-hover:block">
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Web Design</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Development</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">SEO</a></li>
+            </ul>
+          </li>
+
+          <!-- Cases Dropdown -->
+          <li class="relative group">
+            <button class="flex items-center gap-2 hover:text-gray-800 cursor-pointer">
+              Cases
+              <i data-lucide="chevron-down" class="w-4 h-4"></i>
+            </button>
+
+            <ul class="absolute left-0 top-8 w-44 bg-white shadow-md rounded-md py-2 hidden group-hover:block">
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Case Study 1</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Case Study 2</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Case Study 3</a></li>
+            </ul>
+          </li>
+
+          <!-- Blog Dropdown -->
+          <li class="relative group">
+            <button class="flex items-center gap-2 hover:text-gray-800 cursor-pointer">
+              Blog
+              <i data-lucide="chevron-down" class="w-4 h-4"></i>
+            </button>
+
+            <ul class="absolute left-0 top-8 w-44 bg-white shadow-md rounded-md py-2 hidden group-hover:block">
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Latest Posts</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Tutorials</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">News</a></li>
+            </ul>
+          </li>
+
+          <!-- Contact Dropdown -->
+          <li class="relative group">
+            <button class="flex items-center gap-2 hover:text-gray-800 cursor-pointer">
+              Contact Us
+              <i data-lucide="chevron-down" class="w-4 h-4"></i>
+            </button>
+
+            <ul class="absolute left-0 top-8 w-44 bg-white shadow-md rounded-md py-2 hidden group-hover:block">
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Email</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Phone</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Location</a></li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <button class="bg-[#B68C5A] text-white px-5 py-2 rounded-md text-sm font-medium hover:bg-[#a67a4b] transition">
+          Free Consultation
+        </button>
+      </nav>
+
+      <!-- Mobile Hamburger -->
+      <button id="menuBtn" class="md:hidden text-gray-700">
+        <i data-lucide="menu" class="w-7 h-7"></i>
+      </button>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
+
+      <ul class="flex flex-col gap-2 text-gray-700">
+
+        <li><a href="#" class="block py-2">Home</a></li>
+
+        <!-- Mobile Dropdowns -->
+        <li>
+          <button class="w-full flex justify-between items-center py-2" onclick="toggleDropdown('servicesDrop')">
+            Services
+            <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <ul id="servicesDrop" class="hidden pl-4 text-gray-600">
+            <li><a href="#" class="block py-1">Web Design</a></li>
+            <li><a href="#" class="block py-1">Development</a></li>
+            <li><a href="#" class="block py-1">SEO</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <button class="w-full flex justify-between items-center py-2" onclick="toggleDropdown('casesDrop')">
+            Cases
+            <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <ul id="casesDrop" class="hidden pl-4 text-gray-600">
+            <li><a href="#" class="block py-1">Case Study 1</a></li>
+            <li><a href="#" class="block py-1">Case Study 2</a></li>
+            <li><a href="#" class="block py-1">Case Study 3</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <button class="w-full flex justify-between items-center py-2" onclick="toggleDropdown('blogDrop')">
+            Blog
+            <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <ul id="blogDrop" class="hidden pl-4 text-gray-600">
+            <li><a href="#" class="block py-1">Latest Posts</a></li>
+            <li><a href="#" class="block py-1">Tutorials</a></li>
+            <li><a href="#" class="block py-1">News</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <button class="w-full flex justify-between items-center py-2" onclick="toggleDropdown('contactDrop')">
+            Contact Us
+            <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <ul id="contactDrop" class="hidden pl-4 text-gray-600">
+            <li><a href="#" class="block py-1">Email</a></li>
+            <li><a href="#" class="block py-1">Phone</a></li>
+            <li><a href="#" class="block py-1">Location</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+      <button class="mt-4 w-full bg-[#B68C5A] text-white px-5 py-3 rounded-md text-sm font-medium hover:bg-[#a67a4b] transition">
+        Free Consultation
+      </button>
+    </div>
+  </header>
+
+  <!-- JS -->
+  <script>
+    lucide.createIcons();
+
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    function toggleDropdown(id) {
+      document.getElementById(id).classList.toggle("hidden");
+    }
+  </script>
+
+</body>
+</html>

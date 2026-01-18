@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Google Font: EB Garamond font link -->
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Google Font: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <title>Legal Solution Resources</title>
+</head>
+
+<body class="bg-white" style="font-family: 'Poppins', 'EB Garamond', serif;">
+
+  <header class="w-full">
+    <nav class="max-w-[1170px] mx-auto flex items-center justify-between py-5 px-4">
+
+      <!-- Logo -->
+      <div class="flex items-center gap-2">
+        <img src="images/logo2.png" alt="Justice Logo" class="h-8 w-auto" />
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center gap-8 text-gray-500 text-base">
+        <ul class="flex items-center gap-6">
+          <li><a href="#" class="hover:text-gray-800">Home</a></li>
+
+          <li>
+            <a href="#" class="flex items-center gap-2 hover:text-gray-800">
+              Services
+              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="flex items-center gap-2 hover:text-gray-800">
+              Cases
+              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="flex items-center gap-2 hover:text-gray-800">
+              Blog
+              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="flex items-center gap-2 hover:text-gray-800">
+              Contact Us
+              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </a>
+          </li>
+        </ul>
+
+        <button class="bg-[#B68C5A] text-white px-5 py-2 rounded-md text-sm font-medium hover:bg-[#a67a4b] transition">
+          Free Consultation
+        </button>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button class="md:hidden text-gray-700">
+        <i data-lucide="menu" class="w-7 h-7"></i>
+      </button>
+
+    </nav>
+  </header>
+
+
+  <!-- Banner section  -->
+  <section class="max-w-[1170px] mx-auto px-4 mt-10">
+    <div class="relative h-[420px] md:h-[550px] w-full overflow-hidden rounded-lg bg-black"
+      style="background-image: url('images/banner.png'); background-size: cover; background-position: center;">
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/60"></div>
+
+      <!-- Content -->
+      <div class="relative z-10 flex h-full flex-col items-center justify-center text-center px-4">
+        <h1 class="text-white text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight"
+          style="font-family: 'EB Garamond', serif;">
+          We Provide Effective <br />
+          Legal Solutions
+        </h1>
+
+        <p class="mt-6 max-w-2xl text-sm md:text-base text-gray-200">
+          There are many variations of passages of Lorem Ipsum available, but the majority
+          have suffered alteration in some form, by injected humour.
+        </p>
+
+        <!-- Search Box -->
+        <!-- <div class="mt-8 flex w-full max-w-2xl items-center gap-6"> -->
+        <!-- Responsive styled -->
+        <div class="mt-8 flex flex-col md:flex-row w-full max-w-2xl items-center gap-4 md:gap-6">
+
+          <input type="text" placeholder="Search your services"
+            class="w-full rounded-md bg-white px-4 py-3 text-base outline-amber-500" />
+          <!-- <button
+          class="rounded-md bg-[#B68C5A] px-6 py-3 text-xl font-semibold text-white hover:bg-[#a67a4b] transition"
+        >
+          Search
+        </button> -->
+          <!-- Button Responsive full-width -->
+          <button
+            class="w-full md:w-auto rounded-md bg-[#B68C5A] px-6 py-3 text-lg md:text-xl font-semibold text-white hover:bg-[#a67a4b] transition">Search
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Legal Practice Section -->
+  <section class="max-w-[1170px] mx-auto px-4 mt-20 text-center">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800" style="font-family: 'EB Garamond', serif;">
+      The Legal Practice Area
+    </h2>
+
+    <p class="mt-6 max-w-2xl mx-auto text-sm md:text-base text-gray-500 leading-relaxed">
+      There are many variations of passages of Lorem Ipsum available, but the majority have
+      suffered alteration in some form, by injected humour.
+    </p>
+  </section>
+
+  <!-- card section start -->
+  <section class="max-w-[1170px] mx-auto px-4 mt-14">
+
+    <!-- Grid Wrapper -->
+    <div class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
+
+      <!-- Card 1 -->
+      <div class="p-8 md:p-10 text-center">
+        <img src="images/business.png" class="mx-auto mb-6 h-[72px] w-[72px]" alt="" />
+
+        <h3 class="text-[28px] md:text-[32px] font-extrabold text-gray-800" style="font-family: 'EB Garamond', serif;">
+          Business Law
+        </h3>
+
+        <p class="mt-3 text-sm md:text-base text-gray-500 leading-relaxed">
+          There are many variations of passages of Lorem Ipsum available, but the majority have
+          suffered alteration in some form, by injected humour.
+        </p>
+
+        <img class="w-10 h-10 mx-auto mt-8" src="images/Frame.png" alt="">
+      </div>
+
+      <!-- Card 2 (Highlight) -->
+      <div class="p-8 md:p-10 text-center">
+        <img src="images/criminal.png" class="mx-auto mb-6 h-[72px] w-[72px]" alt="" />
+
+        <h3 class="text-[28px] md:text-[32px] font-extrabold text-gray-800" style="font-family: 'EB Garamond', serif;">
+          Criminal Law
+        </h3>
+
+        <p class="mt-3 text-sm md:text-base text-gray-500 leading-relaxed">
+          There are many variations of passages of Lorem Ipsum available, but the majority have
+          suffered alteration in some form, by injected humour.
+        </p>
+
+        <img class="w-10 h-10 mx-auto mt-8" src="images/Frame.png" alt="">
+      </div>
+
+      <!-- Card 3 -->
+      <div class="p-8 md:p-10 text-center">
+        <img src="images/child.png" class="mx-auto mb-6 h-[72px] w-[72px]" alt="" />
+
+        <h3 class="text-[28px] md:text-[32px] font-extrabold text-gray-800" style="font-family: 'EB Garamond', serif;">
+          Child Support
+        </h3>
+
+        <p class="mt-3 text-sm md:text-base text-gray-500 leading-relaxed">
+          There are many variations of passages of Lorem Ipsum available, but the majority have
+          suffered alteration in some form, by injected humour.
+        </p>
+
+        <img class="w-10 h-10 mx-auto mt-8" src="images/Frame.png" alt="">
+      </div>
+
+      <!-- Card 4 -->
+      <div class="p-8 md:p-10 text-center">
+        <img src="images/education.png" class="mx-auto mb-6 h-[72px] w-[72px]" alt="" />
+
+        <h3 class="text-[28px] md:text-[32px] font-extrabold text-gray-800" style="font-family: 'EB Garamond', serif;">
+          Education Law
+        </h3>
+
+        <p class="mt-3 text-sm md:text-base text-gray-500 leading-relaxed">
+          There are many variations of passages of Lorem Ipsum available, but the majority have
+          suffered alteration in some form, by injected humour.
+        </p>
+
+        <img class="w-10 h-10 mx-auto mt-8" src="images/Frame.png" alt="">
+      </div>
+
+      <!-- Card 5 -->
+      <div class="p-8 md:p-10 text-center">
+        <img src="images/divorce.png" class="mx-auto mb-6 h-[72px] w-[72px]" alt="" />
+
+        <h3 class="text-[28px] md:text-[32px] font-extrabold text-gray-800" style="font-family: 'EB Garamond', serif;">
+          Divorce Law
+        </h3>
+
+        <p class="mt-3 text-sm md:text-base text-gray-500 leading-relaxed">
+          There are many variations of passages of Lorem Ipsum available, but the majority have
+          suffered alteration in some form, by injected humour.
+        </p>
+
+        <img class="w-10 h-10 mx-auto mt-8" src="images/Frame.png" alt="">
+      </div>
+
+      <!-- Card 6 -->
+      <div class="p-8 md:p-10 text-center">
+        <img src="images/tax.png" class="mx-auto mb-6 h-[72px] w-[72px]" alt="" />
+
+        <h3 class="text-[28px] md:text-[32px] font-extrabold text-gray-800" style="font-family: 'EB Garamond', serif;">
+          Tax Law
+        </h3>
+
+        <p class="mt-3 text-sm md:text-base text-gray-500 leading-relaxed">
+          There are many variations of passages of Lorem Ipsum available, but the majority have
+          suffered alteration in some form, by injected humour.
+        </p>
+
+        <img class="w-10 h-10 mx-auto mt-8" src="images/Frame.png" alt="">
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Client Section Title -->
+  <section class="max-w-[1170px] mx-auto px-4 mt-20 text-center">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800" style="font-family: 'EB Garamond', serif;">
+      What Our Client Say
+    </h2>
+
+    <p class="mt-6 max-w-2xl mx-auto text-sm md:text-base text-gray-500 leading-relaxed">
+      There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some
+      form, by injected humour.
+    </p>
+  </section>
+
+  <!-- Client Banner Section -->
+  <section class="max-w-[1170px] mx-auto px-4 mt-10">
+    <div class="relative h-[420px] md:h-[550px] w-full overflow-hidden rounded-lg bg-black"
+      style="background-image: url('images/banner.png'); background-size: cover; background-position: center;">
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/50"></div>
+
+      <!-- Content -->
+      <div class="relative z-10 flex h-full flex-col items-center justify-center text-center px-4">
+        <img class="w-20 h-20 rounded-full object-cover mb-6 " src="images/rashed.jpg" alt="">
+        <h4 class="text-white text-2xl font-extrabold leading-tight" style="font-family: 'EB Garamond', serif;">
+          Md. Rasheduzzaman
+        </h4>
+        <p class="mt-6 max-w-2xl text-sm md:text-base text-gray-200">UIX Designer</p>
+
+        <p class="mt-6 max-w-2xl text-sm md:text-base text-gray-200">
+          Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+          literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+          College in Virginia, looked up one of the more obscure Latin words, consectetur.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Ask Questions Section -->
+  <section class="max-w-[1170px] mx-auto px-4 mt-20 text-center">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800" style="font-family: 'EB Garamond', serif;">
+      Frequently Asked Any Questions
+    </h2>
+
+    <p class="mt-6 max-w-2xl mx-auto text-sm md:text-base text-gray-500 leading-relaxed">
+      There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some
+      form, by injected humour.
+    </p>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="max-w-[1170px] mx-auto px-4 mt-14">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
+      <!-- Left: FAQ -->
+      <div class="space-y-4">
+
+        <!-- Active FAQ (Open) -->
+        <div class="bg-gray-100 rounded-md p-6">
+          <div class="flex items-center justify-between">
+            <h3 class="font-semibold text-gray-800">
+              1. Are application fee waivers available?
+            </h3>
+            <span class="text-2xl text-gray-500">−</span>
+          </div>
+
+          <p class="mt-3 text-sm md:text-base text-gray-500 leading-relaxed">
+            There are many variations of passages of Lorem Ipsum available, but the majority have
+            suffered alteration in some form, by injected humour.
+          </p>
+        </div>
+
+        <!-- FAQ Item -->
+        <div class="bg-gray-100 rounded-md px-6 py-7">
+          <div class="flex items-center justify-between">
+            <h3 class="font-semibold text-gray-800">
+              1. Are application fee waivers available?
+            </h3>
+            <span class="text-2xl text-gray-500">+</span>
+          </div>
+        </div>
+
+        <!-- FAQ Item -->
+        <div class="bg-gray-100 rounded-md px-6 py-7">
+          <div class="flex items-center justify-between">
+            <h3 class="font-semibold text-gray-800">
+              1. Are application fee waivers available?
+            </h3>
+            <span class="text-2xl text-gray-500">+</span>
+          </div>
+        </div>
+
+        <!-- FAQ Item -->
+        <div class="bg-gray-100 rounded-md px-6 py-7">
+          <div class="flex items-center justify-between">
+            <h3 class="font-semibold text-gray-800">
+              1. Are application fee waivers available?
+            </h3>
+            <span class="text-2xl text-gray-500">+</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: Image -->
+      <div class="flex justify-center lg:justify-end">
+        <img src="images/faq.png" alt="FAQ Illustration" class="w-full max-w-md" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact form section start -->
+
+  <!-- Contact With Us Title -->
+  <section class="max-w-[1170px] mx-auto px-4 mt-20 text-center">
+    <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-800" style="font-family: 'EB Garamond', serif;">
+      Contact With Us
+    </h2>
+
+    <p class="mt-6 max-w-2xl mx-auto text-sm md:text-base text-gray-500 leading-relaxed">
+      There are many variations of passages of Lorem Ipsum available, but the majority have
+      suffered alteration in some form, by injected humour.
+    </p>
+  </section>
+
+  <!-- Contact Section Content -->
+  <section class="max-w-[1170px] mx-auto px-4 mt-14">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+      <!-- Left Info Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 border border-gray-200">
+
+        <!-- Address -->
+        <div class="p-10 text-center border-b border-gray-200 sm:border-r bg-gray-50">
+          <img class="w-10 h-10 mx-auto" src="images/location.png" alt="Location Icon">
+          <h3 class="mt-4 text-xl font-extrabold text-gray-800" style="font-family: 'EB Garamond', serif;">
+            Address
+          </h3>
+          <p class="mt-2 text-sm text-gray-500">
+            Asst. Teacher, Goyhatta Model GPS,<br />
+            Ullapara, Sirajgonj.
+          </p>
+        </div>
+
+        <!-- Call Us -->
+        <div class="p-10 text-center border-b border-gray-200 bg-gray-50">
+          <img class="w-10 h-10 mx-auto" src="images/call.png" alt="Call Icon">
+          <h3 class="mt-4 text-xl font-extrabold text-gray-800" style="font-family: 'EB Garamond', serif;">
+            Call Us
+          </h3>
+          <p class="mt-2 text-sm text-gray-500">
+            +88 01716-651946 <br />
+            
+          </p>
+        </div>
+
+        <!-- Email Us -->
+        <div class="p-10 text-center border-b border-gray-200 sm:border-b-0 sm:border-r bg-gray-50">
+          <img class="w-10 h-10 mx-auto" src="images/email.png" alt="Email Icon">
+          <h3 class="mt-4 text-xl font-extrabold text-gray-800" style="font-family: 'EB Garamond', serif;">
+            Email Us
+          </h3>
+          <p class="mt-2 text-sm text-gray-500">
+            rashedzaman1978@gmail.com <br />
+            
+          </p>
+        </div>
+
+        <!-- Working Hours -->
+        <div class="p-10 text-center bg-gray-50">
+          <img class="w-10 h-10 mx-auto" src="images/time.png" alt="Time Icon">
+          <h3 class="mt-4 text-xl font-extrabold text-gray-800" style="font-family: 'EB Garamond', serif;">
+            Working Hours
+          </h3>
+          <p class="mt-2 text-sm text-gray-500">
+            Mun-Thu: 9AM to 4:15PM <br />
+            Fri-Sat: Closed
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Right Form -->
+      <form class="space-y-5">
+        <input type="text" placeholder="Your Name" class="w-full bg-gray-100 px-4 py-4 rounded-md outline-lime-200" />
+
+        <input type="email" placeholder="Your Email" class="w-full bg-gray-100 px-4 py-4 rounded-md outline-lime-200" />
+
+        <input type="text" placeholder="Subject" class="w-full bg-gray-100 px-4 py-4 rounded-md outline-lime-200" />
+        <textarea rows="5" placeholder="Your Message"
+          class="w-full bg-gray-100 px-4 py-4 rounded-md outline-amber-200 resize-none"></textarea>
+
+        <button type="submit"
+          class="w-full bg-[#B68C5A] text-white py-4 rounded-md text-xl font-medium hover:bg-[#a67a4b] transition">
+          Send Message
+        </button>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- Footer section start -->
+
+  <footer class="bg-[#111111] text-gray-300 mt-20 mx-4 mb-6">
+    <div class="max-w-[1170px] mx-auto px-4 py-16">
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+        <!-- Column 1: Logo + Text -->
+        <div>
+          <div class="flex items-center gap-2">
+            <img src="images/logo2.png" alt="Justice Logo" class="h-8 w-auto" />
+          </div>
+
+          <p class="mt-5 text-[16px] leading-relaxed text-gray-400">
+            There are many variations of passages of Lorem Ipsum available, but the majority have
+            suffered alteration in some form, by injected humour.
+          </p>
+        </div>
+
+        <!-- Column 2: Useful Link -->
+        <div>
+          <h3 class="text-2xl font-bold text-white" style="font-family: 'EB Garamond', serif;">
+            Useful Link
+          </h3>
+
+          <ul class="mt-5 space-y-3 text-sm text-gray-400">
+            <li><a href="#" class="hover:text-white text-[16px]">Home</a></li>
+            <li><a href="#" class="hover:text-white text-[16px]">About Us</a></li>
+            <li><a href="#" class="hover:text-white text-[16px]">Cases</a></li>
+            <li><a href="#" class="hover:text-white text-[16px]">Blog</a></li>
+            <li><a href="#" class="hover:text-white text-[16px]">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Now -->
+        <div>
+          <h3 class="text-2xl font-bold text-white" style="font-family: 'EB Garamond', serif;">
+            Contact Now
+          </h3>
+
+          <ul class="mt-5 space-y-3 text-[16px] text-gray-400">
+            <li>Asst. Teacher <br /> Goyhatta MGPS</li>
+            <li>Ullapara, Sirajgonj.</li>
+            <li>+88 01716-651946</li>
+            <li>rashedzaman1978@gmail.com</li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Subscribe -->
+        <div>
+          <h3 class="text-2xl font-bold text-white" style="font-family: 'EB Garamond', serif;">
+            Subscribe
+          </h3>
+
+          <p class="mt-5 text-[16px] text-gray-400 leading-relaxed">
+            Subscribe for our latest & Articles. We Won’t Give You Spam Mails
+          </p>
+
+          <div class="mt-6 flex items-center">
+            <input type="email" placeholder="Email Address"
+              class="w-full rounded-l-md bg-white px-4 py-3 text-sm text-gray-700 outline-none" />
+            <button class="rounded-r-md bg-[#B68C5A] px-4 py-3 text-white hover:bg-[#a67a4b] transition">
+              <i data-lucide="send" class="w-5 h-5"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Icons Script -->
+  <!-- Lucide Icons Initialization -->
+  <script>
+    lucide.createIcons();
+  </script>
+
+</body>
+
+</html>

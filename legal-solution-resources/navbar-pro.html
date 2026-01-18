@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Lucide -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <title>Navbar Pro</title>
+</head>
+
+<body class="bg-gray-100 min-h-[200vh]">
+
+  <!-- Sticky Navbar -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+
+      <!-- Logo -->
+      <h1 class="text-xl font-bold text-gray-800">MyLogo</h1>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex items-center gap-8 text-gray-500 text-base">
+        <ul class="flex items-center gap-6" id="desktopLinks">
+
+          <li>
+            <a href="#" class="nav-link hover:text-gray-800">Home</a>
+          </li>
+
+          <!-- Dropdown Item -->
+          <li class="relative">
+            <button data-dropdown-btn="services"
+              class="nav-link flex items-center gap-2 hover:text-gray-800 cursor-pointer">
+              Services
+              <i data-lucide="chevron-down" class="w-4 h-4 dropdown-icon transition-transform duration-200"></i>
+            </button>
+
+            <ul data-dropdown-menu="services"
+              class="absolute left-0 top-10 w-44 bg-white shadow-md rounded-md py-2
+                     opacity-0 scale-95 invisible transition-all duration-200">
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Web Design</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Development</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">SEO</a></li>
+            </ul>
+          </li>
+
+          <li class="relative">
+            <button data-dropdown-btn="cases"
+              class="nav-link flex items-center gap-2 hover:text-gray-800 cursor-pointer">
+              Cases
+              <i data-lucide="chevron-down" class="w-4 h-4 dropdown-icon transition-transform duration-200"></i>
+            </button>
+
+            <ul data-dropdown-menu="cases"
+              class="absolute left-0 top-10 w-44 bg-white shadow-md rounded-md py-2
+                     opacity-0 scale-95 invisible transition-all duration-200">
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Case Study 1</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Case Study 2</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Case Study 3</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#" class="nav-link hover:text-gray-800">Blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="nav-link hover:text-gray-800">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <button class="bg-[#B68C5A] text-white px-5 py-2 rounded-md text-sm font-medium hover:bg-[#a67a4b] transition">
+          Free Consultation
+        </button>
+      </nav>
+
+      <!-- Mobile Hamburger -->
+      <button id="menuBtn" class="md:hidden text-gray-700">
+        <i data-lucide="menu" class="w-7 h-7"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
+      <ul class="flex flex-col gap-2 text-gray-700" id="mobileLinks">
+
+        <li><a href="#" class="mobile-link block py-2">Home</a></li>
+
+        <li>
+          <button class="mobile-link w-full flex justify-between items-center py-2" data-mobile-drop="servicesM">
+            Services
+            <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200"></i>
+          </button>
+          <ul id="servicesM" class="hidden pl-4 text-gray-600">
+            <li><a href="#" class="block py-1">Web Design</a></li>
+            <li><a href="#" class="block py-1">Development</a></li>
+            <li><a href="#" class="block py-1">SEO</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#" class="mobile-link block py-2">Cases</a></li>
+        <li><a href="#" class="mobile-link block py-2">Blog</a></li>
+        <li><a href="#" class="mobile-link block py-2">Contact Us</a></li>
+
+      </ul>
+
+      <button class="mt-4 w-full bg-[#B68C5A] text-white px-5 py-3 rounded-md text-sm font-medium hover:bg-[#a67a4b] transition">
+        Free Consultation
+      </button>
+    </div>
+  </header>
+
+  <script>
+    lucide.createIcons();
+
+    // Sticky navbar done by Tailwind: sticky top-0 z-50
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    // Desktop dropdown logic (click + outside close)
+    const dropdownBtns = document.querySelectorAll("[data-dropdown-btn]");
+    const dropdownMenus = document.querySelectorAll("[data-dropdown-menu]");
+
+    function closeAllDropdowns() {
+      dropdownMenus.forEach(menu => {
+        menu.classList.add("opacity-0", "scale-95", "invisible");
+      });
+
+      dropdownBtns.forEach(btn => {
+        const icon = btn.querySelector(".dropdown-icon");
+        if (icon) icon.classList.remove("rotate-180");
+      });
+    }
+
+    dropdownBtns.forEach(btn => {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+
+        const key = btn.getAttribute("data-dropdown-btn");
+        const menu = document.querySelector(`[data-dropdown-menu="${key}"]`);
+        const icon = btn.querySelector(".dropdown-icon");
+
+        const isOpen = !menu.classList.contains("invisible");
+
+        closeAllDropdowns();
+
+        if (!isOpen) {
+          menu.classList.remove("opacity-0", "scale-95", "invisible");
+          if (icon) icon.classList.add("rotate-180");
+        }
+      });
+    });
+
+    document.addEventListener("click", () => {
+      closeAllDropdowns();
+    });
+
+    // Active Link Highlight (Desktop)
+    const desktopLinks = document.querySelectorAll("#desktopLinks .nav-link");
+
+    desktopLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        desktopLinks.forEach(l => l.classList.remove("text-gray-800", "font-semibold"));
+        link.classList.add("text-gray-800", "font-semibold");
+      });
+    });
+
+    // Active Link Highlight (Mobile)
+    const mobileLinks = document.querySelectorAll("#mobileLinks .mobile-link");
+
+    mobileLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        mobileLinks.forEach(l => l.classList.remove("text-gray-800", "font-semibold"));
+        link.classList.add("text-gray-800", "font-semibold");
+      });
+    });
+
+    // Mobile dropdown toggle
+    const mobileDropBtns = document.querySelectorAll("[data-mobile-drop]");
+
+    mobileDropBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const id = btn.getAttribute("data-mobile-drop");
+        document.getElementById(id).classList.toggle("hidden");
+      });
+    });
+
+    // Close mobile menu if click outside header
+    document.addEventListener("click", (e) => {
+      const header = document.querySelector("header");
+      if (!header.contains(e.target)) {
+        mobileMenu.classList.add("hidden");
+        closeAllDropdowns();
+      }
+    });
+  </script>
+
+</body>
+</html>
