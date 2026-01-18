@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- google fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <title>Fitness Resources</title>
+</head>
+
+<body class="bg-[#1f1f1f] text-white" style="font-family: 'Inter', sans-serif;">
+
+  <header>
+    <nav class="max-w-6xl mx-auto flex items-center justify-between pt-14 px-4">
+
+      <!-- Logo -->
+      <div>
+        <p class="text-4xl font-extrabold italic text-[#E6533C]">Fitness</p>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center gap-12 text-base border border-white/10 rounded-3xl px-2 py-3">
+        <ul class="flex items-center gap-12">
+          <li><a href="#" class="hover:text-gray-400 bg-[#E6533C] text-[18px] text-white font-semibold px-5 py-2 rounded-full  hover:opacity-90 transition">Home</a></li>
+
+          <li>
+            <a href="#" class="text-[18px] text-white hover:text-gray-400">
+              Services
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="text-[18px] text-white hover:text-gray-400">
+              Contact
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="text-[18px] text-white hover:text-gray-400 mr-2">
+              About 
+            </a>
+          </li>
+        </ul>
+
+
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button class="md:hidden text-white">
+        <i data-lucide="menu" class="w-7 h-7"></i>
+      </button>
+
+    </nav>
+  </header>
+<section class="max-w-6xl mx-auto px-4 pt-10 pb-16">
+  <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
+
+    <!-- Left Content -->
+    <div>
+      <h1 class="text-4xl md:text-[78px] leading-[1.05] font-extrabold">
+        Get body in <br />
+        shape & stay <br />
+        healthy
+      </h1>
+
+      <p class="mt-6 text-gray-400 text-[16px] leading-6 max-w-md">
+        A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and
+        stay fit!
+      </p>
+
+      <!-- Buttons -->
+      <div class="mt-8 flex items-center gap-4 flex-wrap">
+        <a href="#"
+          class="bg-[#E6533C] hover:opacity-90 transition text-[18px] text-white font-semibold px-7 py-3 rounded-full whitespace-nowrap">
+          <span class="inline md:hidden">Join Now!</span>
+          <span class="hidden md:inline">Join Club Now!</span>
+        </a>
+
+        <a href="#"
+          class="border border-white/20 hover:border-white/40 transition text-[18px] text-white font-semibold px-7 py-3 rounded-full whitespace-nowrap">
+          Download App
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Content -->
+    <div class="relative flex justify-center lg:justify-end mt-10 lg:mt-0">
+
+      <!-- Image -->
+      <img src="images/Images 2.png" alt="fitness man"
+        class="w-[280px] md:w-[340px] object-contain" />
+
+      <!-- Card Top Right -->
+      <div
+        class="absolute top-10 right-[-8px] md:top-15 md:right-[150px] lg:top-24 lg:right-[-60px]
+        bg-white/10 backdrop-blur-md border border-white/10 rounded-xl px-5 py-3">
+        <p class="text-3xl md:text-[40px] font-extrabold">500+</p>
+        <p class="text-gray-300 text-xs">Free Workout Videos</p>
+      </div>
+
+      <!-- Card Bottom Left -->
+      <div
+        class="absolute bottom-14 left-2 md:bottom-16 md:left-32 lg:bottom-16 lg:left-32
+        bg-white/10 backdrop-blur-md border border-white/10 rounded-xl px-5 py-3 flex items-center gap-3">
+        <span class="w-8 h-8 rounded-full bg-[#E6533C]"></span>
+        <div>
+          <p class="text-2xl font-bold">350+</p>
+          <p class="text-gray-300 text-xs">Video tutorial</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Lucide Icons -->
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
+
+</body>
+
+</html>
