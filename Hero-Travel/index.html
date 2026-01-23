@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/71e8067ec0.js" crossorigin="anonymous"></script>
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+  <!-- Tailwind Output CSS -->
+    <link rel="stylesheet" href=".output.css">
+     <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Hero Travel</title>
+</head>
+<body class="bg-white text-[#3a3a3a] min-h-screen" style="font-family: 'Poppins', sans-serif;">
+
+    <!-- HEADER -->
+    <header>
+
+        <!-- NAVBAR -->
+        <nav class="w-full bg-white shadow-md">
+
+            <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-6">
+
+                <!-- Center: Logo -->
+              <div class="flex items-center gap-4 text-2xl font-extrabold">
+                <img src="./Images/logo.png" alt="">
+                <h2>Hero <span class="text-[#FF5400]">Travel</span></h2>
+              </div>
+
+                <!-- Mobile Right: Cart -->
+                <a href="#" class="lg:hidden" aria-label="Cart">
+                    <img src="./images/cart.png" alt="Cart" class="w-6 h-6 lg:w-9 lg:h-9">
+                </a>
+
+                <!-- Desktop Right: Menu -->
+                <ul class="hidden lg:flex items-center gap-8 text-base font-semibold">
+                    <li><a href="#" class="hover:text-purple-600 transition">Home</a></li>
+                    <li><a href="#" class="hover:text-purple-600 transition">Pakages</a></li>
+                    <li><a href="#" class="hover:text-purple-600 transition">Testimonials</a></li>
+                    <li><a href="#" class="hover:text-purple-600 transition">Blog</a></li>
+                    <li><a href="#" class="hover:text-purple-600 transition">Contact</a></li>
+
+                   
+                </ul>
+                <!-- Mobile Left: Hamburger -->
+                <button class="lg:hidden p-2" aria-label="Menu">
+                    <i class="fa-solid fa-bars text-2xl text-black"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- END OF NAVBAR -->
+
+    </header>
+</body>
+</html>
