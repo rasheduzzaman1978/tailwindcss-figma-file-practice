@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
     rel="stylesheet">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Tailwind Output CSS -->
   <link rel="stylesheet" href="../output.css">
@@ -65,15 +67,25 @@
       <!-- hero circle with microphone -->
       <div class="relative max-w-3xl mx-auto mb-12 flex items-center justify-center">
         <!-- Circle -->
-        <img src="./Images/hero-circle.png" alt="Hero Circle" class="w-[170px] h-auto object-contain" />
+        <img src="./Images/hero-circle.png" alt="Hero Circle"
+          class="w-[170px] h-auto lg:w-[350px] lg:h-[350px] object-contain" />
         <!-- Microphone Icon -->
         <img src="./Images/microphone.png" alt="Microphone"
-          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 lg:w-24 z-10"
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 lg:w-[140px] lg:h-auto z-10"
           style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" />
         <!-- New Badge -->
-        <span
+        <!-- <span
           class="absolute z-20 text-sm lg:text-base font-bold px-3 py-1 rounded-full shadow-[0px_3px_27px_0px_rgba(0,255,136,0.5)]"
           style="background-color: #00FF88; color: #1A0B2E; box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5); top: 5%; right: 38%; transform: translate(65%, -40%);">
+          New
+        </span> -->
+        <span class="absolute z-20
+         top-[5%] right-[38%]
+         translate-x-[65%] -translate-y-[40%]
+         text-sm lg:text-base font-bold
+         px-3 py-1 rounded-full
+         bg-[#00FF88] text-[#1A0B2E]
+         shadow-[0px_3px_27px_0px_rgba(0,255,136,0.5)]">
           New
         </span>
       </div>
@@ -164,7 +176,301 @@
 
       </div>
     </section>
+    <section>
+      <div class="max-w-6xl mx-auto px-6 py-12 lg:py-16">
+        <h2 class="text-2xl lg:text-4xl font-extrabold text-center text-[#131318]">
+          Choose Your Destination
+        </h2>
 
+        <p class="mt-4 text-sm lg:text-base text-center text-[#5A5A5D] leading-relaxed max-w-2xl mx-auto">
+          Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa.
+          Sodales dictumst nec nibh pellentesque.
+        </p>
+
+        <!-- Destination Grid -->
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-12 gap-6">
+
+          <!-- Row 1 -->
+          <div class="relative rounded-2xl overflow-hidden md:col-span-6">
+            <img src="./Images/c1.png" class="w-full h-56 object-cover" />
+            <div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+              <h3 class="text-white text-xl font-bold">Maldives</h3>
+            </div>
+          </div>
+
+          <div class="relative rounded-2xl overflow-hidden md:col-span-6">
+            <img src="./Images/c2.png" class="w-full h-56 object-cover" />
+            <div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+              <h3 class="text-white text-xl font-bold">Indonesia</h3>
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="relative rounded-2xl overflow-hidden md:col-span-4">
+            <img src="./Images/c3.png" class="w-full h-48 object-cover" />
+            <div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+              <h3 class="text-white text-lg font-bold">Sri Lanka</h3>
+            </div>
+          </div>
+
+          <div class="relative rounded-2xl overflow-hidden md:col-span-5">
+            <img src="./Images/c4.png" class="w-full h-48 object-cover" />
+            <div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+              <h3 class="text-white text-lg font-bold">North America</h3>
+            </div>
+          </div>
+
+          <div class="relative rounded-2xl overflow-hidden md:col-span-3">
+            <img src="./Images/c5.png" class="w-full h-48 object-cover" />
+            <div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+              <h3 class="text-white text-lg font-bold">Kashmir</h3>
+            </div>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="relative rounded-2xl overflow-hidden md:col-span-5">
+            <img src="./Images/c6.png" class="w-full h-52 object-cover" />
+            <div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+              <h3 class="text-white text-xl font-bold">Bangladesh</h3>
+            </div>
+          </div>
+
+          <div class="relative rounded-2xl overflow-hidden md:col-span-7">
+            <img src="./Images/c7.png" class="w-full h-52 object-cover" />
+            <div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+              <h3 class="text-white text-xl font-bold">Bandarban</h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Why choose us section -->
+    <section class="py-14">
+      <div class="max-w-6xl mx-auto px-6">
+        <!-- Heading -->
+        <h2 class="text-2xl lg:text-4xl font-extrabold text-center text-[#131318]">
+          Why Choose Us
+        </h2>
+
+        <p class="mt-4 text-sm lg:text-base text-center text-[#5A5A5D] leading-relaxed max-w-2xl mx-auto">
+          Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa.
+          Sodales dictumst nec nibh pellentesque.
+        </p>
+
+        <!-- Cards -->
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <!-- Card 1 -->
+          <div class="rounded-2xl border border-[#FBB56333] bg-[#FBB5631A] p-8">
+            <img src="./Images/image1.png" alt="" class="w-16 h-16" />
+
+            <h3 class="mt-4 text-xl lg:text-2xl font-extrabold text-[#131318]">
+              Handpicked Hotels
+            </h3>
+
+            <p class="mt-3 text-[#5A5A5D] text-base leading-relaxed">
+              Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et.
+              Libero commodo sagittis dignissim adipiscing quis.
+              Habitant adipiscing risus natoque aliquet.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="rounded-2xl border border-[#29CEF633] bg-[#29CEF61A] p-8">
+            <img src="./Images/image2.png" alt="" class="w-16 h-16" />
+
+            <h3 class="mt-4 text-xl font-extrabold text-[#131318]">
+              World Class Service
+            </h3>
+
+            <p class="mt-3 text-[#5A5A5D] text-sm leading-relaxed">
+              Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et.
+              Libero commodo sagittis dignissim adipiscing quis.
+              Habitant adipiscing risus natoque aliquet.
+            </p>
+          </div>
+
+          <!-- Card 3 (center) -->
+          <div class="rounded-2xl border border-[#E9444433] bg-[#E944441A] p-8 md:col-span-2 md:max-w-xl md:mx-auto">
+            <img src="./Images/image3.png" alt="" class="w-16 h-16" />
+
+            <h3 class="mt-4 text-xl font-extrabold text-[#131318]">
+              Best Price Guarantee
+            </h3>
+
+            <p class="mt-3 text-[#5A5A5D] text-sm leading-relaxed">
+              Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et.
+              Libero commodo sagittis dignissim adipiscing quis.
+              Habitant adipiscing risus natoque aliquet.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Deals & Discounts Section -->
+    <section class="py-14">
+      <div class="max-w-6xl mx-auto px-6">
+
+        <!-- Heading -->
+        <h2 class="text-2xl lg:text-4xl font-extrabold text-center text-[#131318]">
+          Deals & Discounts
+        </h2>
+
+        <p class="mt-4 text-sm lg:text-base text-center text-[#5A5A5D] leading-relaxed max-w-2xl mx-auto">
+          Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa.
+          Sodales dictumst nec nibh pellentesque.
+        </p>
+
+        <!-- Deal Card 1 (Right) -->
+        <div class="mt-4 rounded-2xl overflow-hidden relative">
+          <img src="./Images/deal1.png" class="w-full h-[500px] object-cover" alt="" />
+          <div class="absolute inset-0 bg-black/20"></div>
+
+          <div class="absolute inset-0 flex items-center justify-center md:justify-end p-6 md:pr-14 md:py-4">
+
+            <div class="w-full h-auto md:w-[579px] md:h-[389px] bg-white/70 backdrop-blur-md rounded-2xl p-8 md:p-10 md:pr-[80px] shadow-lg">
+
+              <!-- top icons -->
+              <div class="flex flex-wrap gap-6 text-sm md:text-base text-[#5A5A5D] mt-4">
+                <div class="flex items-center gap-2">
+                  <img src="./Images/img1.png" alt="" class="w-6 h-6" />
+                  <span>7 Day / 6 Night</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <img src="./Images/img2.png" alt="" class="w-6 h-6" />
+                  <span>Max : 10</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <img src="./Images/img3.png" alt="" class="w-6 h-6" />
+                  <span>Malaysia</span>
+                </div>
+              </div>
+
+              <h3 class="mt-6 text-2xl font-extrabold text-[#131318]">Tour To Satorini</h3>
+
+              <p class="mt-4 text-sm text-[#5A5A5D] leading-relaxed">
+                Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et.
+                Libero commodo sagittis dignissim adipiscing quis.
+              </p>
+
+              <p class="mt-4 text-lg font-extrabold text-[#FF5400]">
+                Price: $1300-$1500
+              </p>
+
+              <button class="mt-8 bg-[#FF5400] text-white px-6 py-3 rounded-lg font-semibold">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deal Card 2 (Left) -->
+        <div class="mt-4 rounded-2xl overflow-hidden relative">
+          <img src="./Images/deal2.png" class="w-full h-[500px] object-cover" alt="" />
+          <div class="absolute inset-0 bg-black/20"></div>
+
+          <div class="absolute inset-0 flex items-center justify-center md:justify-end p-6 md:pr-14 md:py-4">
+
+            <div class="w-full h-auto md:w-[579px] md:h-[389px] bg-white/70 backdrop-blur-md rounded-2xl p-8 md:p-10 md:pr-[80px] shadow-lg">
+
+              <!-- top icons -->
+              <div class="flex flex-wrap gap-6 text-sm md:text-base text-[#5A5A5D] mt-4">
+                <div class="flex items-center gap-2">
+                  <img src="./Images/img1.png" alt="" class="w-6 h-6" />
+                  <span>7 Day / 6 Night</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <img src="./Images/img2.png" alt="" class="w-6 h-6" />
+                  <span>Max : 10</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <img src="./Images/img3.png" alt="" class="w-6 h-6" />
+                  <span>Malaysia</span>
+                </div>
+              </div>
+
+              <h3 class="mt-6 text-2xl font-extrabold text-[#131318]">Tour To Satorini</h3>
+
+              <p class="mt-4 text-sm text-[#5A5A5D] leading-relaxed">
+                Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et.
+                Libero commodo sagittis dignissim adipiscing quis.
+              </p>
+
+              <p class="mt-4 text-lg font-extrabold text-[#FF5400]">
+                Price: $1300-$1500
+              </p>
+
+              <button class="mt-8 bg-[#FF5400] text-white px-6 py-3 rounded-lg font-semibold">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deal Card 3 (Right) -->
+        <div class="mt-4 rounded-2xl overflow-hidden relative">
+          <img src="./Images/deal3.png" class="w-full h-[500px] object-cover" alt="" />
+          <div class="absolute inset-0 bg-black/20"></div>
+
+          <div class="absolute inset-0 flex items-center justify-center md:justify-end p-6 md:pr-14 md:py-4">
+
+            <div class="w-full h-auto md:w-[579px] md:h-[389px] bg-white/70 backdrop-blur-md rounded-2xl p-8 md:p-10 md:pr-[80px] shadow-lg">
+
+              <!-- top icons -->
+              <div class="flex flex-wrap gap-6 text-sm md:text-base text-[#5A5A5D] mt-4">
+                <div class="flex items-center gap-2">
+                  <img src="./Images/img1.png" alt="" class="w-6 h-6" />
+                  <span>7 Day / 6 Night</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <img src="./Images/img2.png" alt="" class="w-6 h-6" />
+                  <span>Max : 10</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <img src="./Images/img3.png" alt="" class="w-6 h-6" />
+                  <span>Malaysia</span>
+                </div>
+              </div>
+
+              <h3 class="mt-6 text-2xl font-extrabold text-[#131318]">Tour To Satorini</h3>
+
+              <p class="mt-4 text-sm text-[#5A5A5D] leading-relaxed">
+                Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et.
+                Libero commodo sagittis dignissim adipiscing quis.
+              </p>
+
+              <p class="mt-4 text-lg font-extrabold text-[#FF5400]">
+                Price: $1300-$1500
+              </p>
+
+              <button class="mt-8 bg-[#FF5400] text-white px-6 py-3 rounded-lg font-semibold">
+                Book Now
+              </button>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Button -->
+        <div class="mt-14 mb-14 flex justify-center">
+          <button class="bg-[#FF5400] text-white px-6 py-3 rounded-lg font-bold">
+            See All Packages
+          </button>
+        </div>
+
+      </div>
+    </section>
 
   </main>
 </body>
