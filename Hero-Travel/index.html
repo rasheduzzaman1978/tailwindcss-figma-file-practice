@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,106 +9,114 @@
   <!-- Google Fonts Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
 
   <!-- Tailwind Output CSS -->
-    <link rel="stylesheet" href="../output.css">
-     <!-- Tailwind CDN -->
-  
-  
+  <link rel="stylesheet" href="../output.css">
+  <!-- Tailwind CDN -->
+
+
   <title>Hero Travel</title>
 </head>
+
 <body class="bg-white text-[#3a3a3a] min-h-screen" style="font-family: 'Mulish', sans-serif;">
 
-    <!-- HEADER -->
-    <header>
+  <!-- HEADER -->
+  <header>
 
-        <!-- NAVBAR -->
-        <nav class="w-full bg-white shadow-md">
+    <!-- NAVBAR -->
+    <nav class="w-full bg-white shadow-md">
 
-            <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-6">
+      <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-6">
 
-                <!-- Left: Logo -->
-              <div class="flex items-center gap-4 text-2xl lg:text-3xl font-extrabold text-black">
-                <img src="./Images/logo.png" alt="Logo" class="w-7 h-8 lg:w-12 lg:h-14 object-contain">
-                <h2>Hero <span class="text-[#FF5400]">Travel</span></h2>
-              </div>
+        <!-- Left: Logo -->
+        <div class="flex items-center gap-4 text-2xl lg:text-3xl font-extrabold text-black">
+          <img src="./Images/logo.png" alt="Logo" class="w-7 h-8 lg:w-12 lg:h-14 object-contain">
+          <h2>Hero <span class="text-[#FF5400]">Travel</span></h2>
+        </div>
 
-                 <!-- Desktop Center: Menu -->
-                <ul class="hidden lg:flex items-center gap-8 text-[18px] font-semibold">
-                    <li><a href="#" class="hover:text-purple-600 transition">Home</a></li>
-                    <li><a href="#" class="hover:text-purple-600 transition">Pakages</a></li>
-                    <li><a href="#" class="hover:text-purple-600 transition">Testimonials</a></li>
-                    <li><a href="#" class="hover:text-purple-600 transition">Blog</a></li>
-                    <li><a href="#" class="hover:text-purple-600 transition">Contact</a></li>
+        <!-- Desktop Center: Menu -->
+        <ul class="hidden lg:flex items-center gap-8 text-[18px] font-semibold">
+          <li><a href="#" class="hover:text-purple-600 transition">Home</a></li>
+          <li><a href="#" class="hover:text-purple-600 transition">Pakages</a></li>
+          <li><a href="#" class="hover:text-purple-600 transition">Testimonials</a></li>
+          <li><a href="#" class="hover:text-purple-600 transition">Blog</a></li>
+          <li><a href="#" class="hover:text-purple-600 transition">Contact</a></li>
 
-                   
-                </ul>
-                <!-- Mobile Right: Hamburger -->
-                <button class="lg:hidden p-2" aria-label="Menu">
-                    <i class="fa-solid fa-bars text-xl text-black"></i>
-                </button>
-            </div>
-        </nav>
-        
-    </header>
-    
-<main>
+
+        </ul>
+        <!-- Mobile Right: Hamburger -->
+        <button class="lg:hidden p-2" aria-label="Menu">
+          <i class="fa-solid fa-bars text-xl text-black"></i>
+        </button>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+
     <!-- Banner Section -->
-<section
-  class="max-w-6xl mx-auto px-6 py-16 lg:py-28 rounded-2xl overflow-hidden bg-cover bg-center relative"
-  style="background-image: url('./Images/banner.png');"
->
-  <!-- overlay -->
-  <div class="absolute inset-0 bg-black/50"></div>
+    <section class="max-w-6xl mx-auto px-6 py-12 lg:py-16 rounded-2xl overflow-hidden bg-cover bg-center relative"
+      style="background-image: url('./Images/banner.png');">
+      <!-- overlay -->
+      <div class="absolute inset-0 bg-black/50"></div>
+      <!-- hero circle with microphone -->
+      <div class="relative mx-auto mb-12 flex items-center justify-center">
+        <!-- Circle -->
+        <img src="./Images/hero-circle.png" alt="Hero Circle" class="w-[170px] h-auto object-contain" />
+        <!-- Microphone Icon -->
+        <img src="./Images/microphone.png" alt="Microphone"
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 lg:w-24 z-10" />
+        <!-- New Badge -->
+        <span
+          class="absolute z-20 text-sm lg:text-base font-bold px-3 py-1 rounded-full shadow-[0px_3px_27px_0px_rgba(0,255,136,0.5)]"
+          style="background-color: #00FF88; color: #1A0B2E; box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5); top: 5%; right: 38%;">
+          New
+        </span>
+      </div>
 
-  <!-- content -->
-  <div class="relative text-white text-center max-w-3xl mx-auto">
-    <h1 class="text-2xl lg:text-6xl font-extrabold">
-      Explore Your Travel
-    </h1>
+      <!-- content -->
+      <div class="relative text-white text-center max-w-3xl mx-auto z-10">
+        <h1 class="text-3xl lg:text-6xl font-extrabold">Explore Your Travel</h1>
 
-    <p class="mt-4 text-sm lg:text-base text-white/90 leading-relaxed">
-      Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing.
-      In et odio enim ac quis sapien urna eu phasellus.
-    </p>
+        <p class="mt-4 text-sm lg:text-base text-white/90 leading-relaxed">
+          Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing.
+          In et odio enim ac quis sapien urna eu phasellus.
+        </p>
 
-    <!-- form -->
-    <div
-      class="mt-8 bg-white/20 backdrop-blur-md p-4 rounded-xl flex flex-col lg:flex-row gap-4 items-center justify-center"
-    >
-      <input
-        type="text"
-        placeholder="Where go"
-        class="w-full lg:w-[170px] px-4 py-3 rounded-md text-black outline-none"
-      />
+        <!-- form -->
+        <div
+          class="mt-8 bg-white/20 backdrop-blur-md p-4 rounded-xl flex flex-col lg:flex-row gap-4 items-center justify-center">
+          <input type="text" placeholder="Where go"
+            class="w-full lg:w-[170px] px-4 py-3 rounded-md text-black outline-none" />
 
-      <select class="w-full lg:w-[170px] px-4 py-3 rounded-md text-gray-600 outline-none">
-        <option selected disabled>When</option>
-        <option>Today</option>
-        <option>Tomorrow</option>
-        <option>This Week</option>
-      </select>
+          <select class="w-full lg:w-[170px] px-4 py-3 rounded-md text-gray-600 outline-none">
+            <option selected disabled>When</option>
+            <option>Today</option>
+            <option>Tomorrow</option>
+            <option>This Week</option>
+          </select>
 
-      <select class="w-full lg:w-[170px] px-4 py-3 rounded-md text-gray-600 outline-none">
-        <option selected disabled>Select Type</option>
-        <option>Adventure</option>
-        <option>Beach</option>
-        <option>City</option>
-      </select>
+          <select class="w-full lg:w-[170px] px-4 py-3 rounded-md text-gray-600 outline-none">
+            <option selected disabled>Select Type</option>
+            <option>Adventure</option>
+            <option>Beach</option>
+            <option>City</option>
+          </select>
 
-      <button
-        class="w-full lg:w-[170px] px-4 py-3 rounded-md bg-[#FF5400] text-white font-semibold flex items-center justify-center gap-2"
-      >
-        <i class="fa-solid fa-magnifying-glass"></i>
-        Find Now
-      </button>
-    </div>
-  </div>
-</section>
+          <button
+            class="w-full lg:w-[170px] px-4 py-3 rounded-md bg-[#FF5400] text-white font-semibold flex items-center justify-center gap-2">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Find Now
+          </button>
+        </div>
+      </div>
+    </section>
 
 
-           
-</main>
+  </main>
 </body>
+
 </html>
