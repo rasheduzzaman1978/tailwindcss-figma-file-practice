@@ -11,12 +11,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
     rel="stylesheet" />
 
-
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  
+
   <title>My Influence Gear</title>
 </head>
 
@@ -24,51 +24,51 @@
 
   <!-- HEADER -->
   <header>
-
-    <!-- NAVBAR -->
     <nav class="w-full bg-white shadow-md">
-
       <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-6">
 
-        <!-- Mobile Left: Hamburger -->
-        <button class="lg:hidden p-2" aria-label="Menu">
-          <i class="fa-solid fa-bars text-2xl text-black"></i>
-        </button>
-        <!-- Center: Logo -->
-        <a href="#" class="text-base lg:text-2xl font-bold">
+        <!-- Left -->
+        <div class="flex items-center">
+          <!-- Mobile: Hamburger -->
+          <button class="lg:hidden p-2" aria-label="Menu">
+            <i class="fa-solid fa-bars text-2xl"></i>
+          </button>
+
+          <!-- Desktop: Logo -->
+          <a href="#" class="hidden lg:block text-2xl font-bold">
+            Influencer products
+          </a>
+        </div>
+
+        <!-- Center (Mobile Only) -->
+        <a href="#" class="lg:hidden text-base font-bold text-center">
           Influencer products
         </a>
 
-        <!-- Mobile Right: Cart -->
-        <a href="#" class="lg:hidden" aria-label="Cart">
-          <img src="./images/cart.png" alt="Cart" class="w-6 h-6 lg:w-9 lg:h-9">
-        </a>
+        <!-- Right -->
+        <div class="flex items-center gap-6">
 
-        <!-- Desktop Right: Menu -->
-        <ul class="hidden lg:flex items-center gap-8 text-base font-semibold">
-          <li><a href="#" class="hover:text-purple-600 transition">Home</a></li>
-          <li><a href="#" class="hover:text-purple-600 transition">Products</a></li>
-          <li><a href="#" class="hover:text-purple-600 transition">Sign up</a></li>
-          <li><a href="#" class="hover:text-purple-600 transition">Log in</a></li>
+          <!-- Desktop Menu -->
+          <ul class="hidden lg:flex items-center gap-6 text-base font-semibold">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Sign up</a></li>
+            <li><a href="#">Log in</a></li>
+            <li><img src="./images/magnifying.png" class="w-6 h-6" /></li>
+            <li><img src="./images/cart.png" class="w-9 h-9" /></li>
+          </ul>
 
-          <li>
-            <a href="#" aria-label="Search">
-              <img src="./images/magnifying.png" alt="Search" class="w-6 h-6">
-            </a>
-          </li>
+          <!-- Mobile Cart -->
+          <a href="#" class="lg:hidden">
+            <img src="./images/cart.png" class="w-6 h-6" />
+          </a>
 
-          <li>
-            <a href="#" aria-label="Cart">
-              <img src="./images/cart.png" alt="Cart" class="w-9 h-9">
-            </a>
-          </li>
-        </ul>
+        </div>
 
       </div>
     </nav>
-    <!-- END OF NAVBAR -->
-
   </header>
+
 
   <!-- Hero Section -->
   <section>
@@ -81,7 +81,7 @@
           Start your Journey as Influencer
         </h1>
 
-        <p class="text-base mb-4">
+        <p class="text-base mb-4 text-justify">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem vestibulum sed
           scelerisque eros. Lectus faucibus.
         </p>
@@ -123,7 +123,7 @@
     </div>
   </section>
 
-  <!-- Popular Collection Section -->
+  <!-- Popular Featured Collection Section -->
   <section class="py-12">
     <div class="max-w-6xl mx-auto px-4">
 
@@ -346,7 +346,7 @@
       <div class="w-full flex flex-end justify-end mt-6">
         <a href="#" class="inline-flex items-center gap-2 text-[#e02c6d] font-semibold">
           See More
-          <i class="fa-solid fa-arrow-right"></i>
+          <i class="fa-solid fa-arrow-right text-green-800"></i>
         </a>
       </div>
     </div>
@@ -370,7 +370,7 @@
           Featured products at one place
         </h2>
 
-        <p class="text-base text-gray-600 mt-4">
+        <p class="text-base text-gray-600 mt-4 px-3 lg:px-0 text-justify">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
           Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
         </p>
@@ -380,7 +380,7 @@
           class="max-w-2xl inline-flex items-center gap-2 mt-6 bg-[#e02c6d] text-white px-6 py-[10px] rounded-md text-base font-semibold hover:bg-purple-700 transition">
           Join Now
           <span class="flex items-center justify-center w-5 h-5">
-            <img src="./images/right-arrow.svg" alt="Right Arrow" class="w-4 h-4 invert" />
+            <img src="./images/right-arrow.svg" alt="Right Arrow" class="w-4 h-4 invert" /> 
           </span>
         </a>
       </div>
@@ -430,7 +430,5 @@
     </div>
   </footer>
 
-
 </body>
-
 </html>
